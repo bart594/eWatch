@@ -1,2 +1,0 @@
-##### Touch Panel tester. 
-
