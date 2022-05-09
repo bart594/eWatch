@@ -182,7 +182,7 @@ face[0] = {
 				this.mac=(this.mac)?this.mac:set.read("dash","slot"+set.read("dash","slot")+"Mac");
 				if(!this.mac) {
 						this.g.setFont("Vector",25);
-						this.g.drawString("eucWatch",119-(this.g.stringWidth("eucWatch")/2),170); 
+						this.g.drawString("eWatch",119-(this.g.stringWidth("eWatch")/2),170); 
 						this.g.setFont("Vector",20);
 						this.g.drawString("Hold side Btn to Scan",119-(this.g.stringWidth("Hold side Btn to Scan")/2),215); 
 						this.g.flip();
