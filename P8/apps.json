@@ -152,10 +152,10 @@
 		]
 	},
 	{ "id": "dash",
-		"name": "EUC Dashboard",
+		"name": "Ebike Dashboard",
 		"icon": "icon.png",
 		"version":"1.02",
-		"description": "EUC dashboard. Garage, scan and dash faces. Depends on EUC modules.",
+		"description": "Ebike dashboard. Garage, scan and dash faces.",
 		"tags": "euc",
 		"readme": "README.md",
 		"storage": [
@@ -168,15 +168,15 @@
 			{"name":"dashOptions","url":"dashOptions.js"}
 		]
 	}, 
-	{ "id": "dashVeteran",
+	{ "id": "dashEbike",
 		"name": "eBike Settings",
 		"icon": "icon.png",
 		"version":"1.03",
 		"description": "eBike dashboard, settings gui files.",
 		"tags": "euc",
 		"storage": [
-			{"name":"dashVeteran","url":"dashVeteran.js"},
-			{"name":"dashVeteranOptions","url":"dashVeteranOptions.js"}
+			{"name":"dashEbike","url":"dashEbike.js"},
+			{"name":"dashEbikeOptions","url":"dashEbikeOptions.js"}
 
 		]
 	}, 
@@ -184,7 +184,7 @@
 		"name": "EUC modules support",
 		"icon": "icon.png",
 		"version":"1.01",
-		"description": "EUC module switcher, depends on wheel module.",
+		"description": "EUC module switcher, depends on wheel/eBike module.",
 		"tags": "euc",
 		"type": "euc",
 		"storage": [
@@ -193,7 +193,7 @@
 			{"name":"emuZ","url":"emuZ.js"}
 		]
 		},
-        { "id": "eucVeteran",
+        { "id": "eBike",
 		"name": "eBike module",
 		"icon": "icon.png",
 		"version":"1.00",
@@ -201,7 +201,7 @@
 		"tags": "euc",
 		"type": "euc",
 		"storage": [
-			{"name":"eucVeteran","url":"eucVeteran.js"}
+			{"name":"eBike","url":"eBike.js"}
 		]
 	},
 	{ "id": "tpms",
