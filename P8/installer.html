@@ -18,7 +18,7 @@
 			let element = document.getElementById(id);
 			element.value = valueToSelect;
 		}
-		selectElement('devname', (localStorage.p8name)?localStorage.p8name:"eucWatch");
+		selectElement('devname', (localStorage.p8name)?localStorage.p8name:"eWatch");
 		selectElement('riderdist', 0);
 
       // When the 'upload' button is clicked...
@@ -28,7 +28,7 @@
 		var name = document.getElementById("devname").value;
 		var dist = document.getElementById("riderdist").value;
 		if (!dist) dist=0;
-		if (!name || name=="undefined") name="eucWatch";
+		if (!name || name=="undefined") name="eWatch";
         // build the app's text using a templated String
 		//require("handler").advertise(${JSON.stringify(acc)});
 		localStorage.setItem("p8name", name);
