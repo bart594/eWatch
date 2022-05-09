@@ -13,10 +13,6 @@ In advanced:
 - Short tap the mileage bar to switch between total mileage and current time.
 
 
-**for Begode wheels.
-- Long tap on the battery indicator when in voltage mode to change the voltage base readings (67/64/100 volts) for Begode wheels.
-- Long tap on the amperage bar toggles negative/positive values, positive should be bottom bars.
-
 - Swipe left to see the Garage when disconnected from the EUC, or settings when connected.
 
 
