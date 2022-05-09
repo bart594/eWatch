@@ -142,20 +142,20 @@ touchHandler[0]=function(e,x,y){
 				if (face[0].set=="spdF") { 
 					if (x<120){ //spd
 						euc.dash.spdF=(euc.dash.spdF - 0.01);
-						if (euc.dash.spdF <0.5)  euc.dash.spdF=0.5;
+						if (euc.dash.spdF <2.0)  euc.dash.spdF=2.0;
 					}else{
 						euc.dash.spdF=(euc.dash.spdF + 0.01);
-						if (1.5 <euc.dash.spdF)  euc.dash.spdF=1.5;
+						if (3.0 <euc.dash.spdF)  euc.dash.spdF=3.0;
 					}
 					face[0].btn(1,"SPEED X",15,40,90,12,0,0,80,75,155,euc.dash.spdF,30,40,120); //4
 					face[0].ntfy("SPEED FACTOR",euc.dash.spdF,40,1,12,5000,1);
 				}else if (face[0].set=="trpF") { 
 					if (x<120){ //spd
 						euc.dash.trpF=(euc.dash.trpF - 0.01);
-						if (euc.dash.trpF <0.5)  euc.dash.trpF=0.5;
+						if (euc.dash.trpF <2.0)  euc.dash.trpF=2.0;
 					}else{
 						euc.dash.trpF=(euc.dash.trpF + 0.01);
-						if (1.5 <euc.dash.trpF)  euc.dash.trpF=1.5;
+						if (3.0 <euc.dash.trpF)  euc.dash.trpF=3.0;
 					}
 					face[0].btn(1,"DIST X",15,120,90,12,0,80,80,155,155,euc.dash.trpF,30,120,120); //5
 					face[0].ntfy("DISTANCE FACTOR",euc.dash.trpF,40,1,12,5000,1);
