@@ -11,14 +11,14 @@ global.euc= {
 		trp:[0,0,0]//hour/day/month
 	},
 	updateDash:function(slot){require('Storage').write('eucSlot'+slot+'.json', euc.dash);},
-	off:function(err){if (set.def.cli) console.log("EUC off, not connected",err);},
-	wri:function(err){if (set.def.cli) console.log("EUC write, not connected",err);},
+	off:function(err){if (set.def.cli) console.log("eBike off, not connected",err);},
+	wri:function(err){if (set.def.cli) console.log("eBike write, not connected",err);},
 	tgl:function(){ 
 		face.off();
 		if (this.reconnect) {clearTimeout(this.reconnect); this.reconnect=0;}
 		if (euc.loop) {clearTimeout(euc.loop); euc.loop=0;}
 		this.seq=1;
-		ampL=[];batL=[];almL=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		ampL=[];batL=[];almL=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];batterypowerL=[];pedalpowerL=[];
 		if (this.state!="OFF" ) {
 			buzzer([90,60,90]); 
 			//log
@@ -57,8 +57,8 @@ global.euc= {
 				eval(require('Storage').read('euc'+require("Storage").readJSON("dash.json",1)["slot"+require("Storage").readJSON("dash.json",1).slot+"Maker"]));
 				this.state="ON";
 				if (this.dash.bms==undefined) this.dash.bms=1.5;
-				if (this.dash.batF<=10) this.dash.batF=420;
-				if (this.dash.maker!=="Kingsong"||this.dash.maker!=="inmotionV11") this.dash.spdM=0;
+				if (this.dash.batF<=20) this.dash.batF=420;
+				this.dash.spdM=0;
 				this.conn(this.mac);
 				face.go(set.dash[set.def.dash.face],0);
 				this.state="ON";
